@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love for Nature</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1> Discover Its Beauty </h1>
+  <h2> Creation at its finest !</h2>
+  <p style="color: black;">Scientists estimate there are between 200 – 400 billion stars in our galaxy while there are an estimated 1 trillion trees on Earth!<br>
+     Like the stars, trees live a long time and are truly important for life. </p>
+     
+<div class ="sticky"> <strong>Let Nature Consume You!</strong></div>
+<br>
+<br>
+<div class="content">
+    <div id="section_1">
+<br>
+<br>
+<div class="slideshow">
+         <div class="images">
+            <img src="img/slide-1.jpg" alt="Mountain">
+            <img src="img/slide-2.jpg" alt="Tree">
+            <img src="img/slide-3.jpg" alt="Bird">
+         </div>
+      </div>
+      <script>
+         var indexValue = 0;
+         function slideShow(){
+           setTimeout(slideShow, 2500);
+           var x;
+           const img = document.querySelectorAll("img");
+           for(x = 0; x < img.length; x++){
+             img[x].style.display = "none";
+           }
+           indexValue++;
+           if(indexValue > img.length){indexValue = 1}
+           img[indexValue -1].style.display = "block";
+         }
+         slideShow();
+       </script>
+<br>
+<h3><u> Why is Nature so Fascinating? </h3>
+<p2 > <strong><u> 7 Interesting Facts About Nature:</strong> </p2>
+<ul style="color: #E2B53E" font-size: 30px>
+  <li> Acacia trees can warn each other of danger.</li>
+  <br>
+  <li> Owls don't have eyeballs.</li>
+  <br>
+  <li> In space, metal can weld on its own.</li>
+  <br>
+  <li> There are 28 kinds of "corpse flowers.</li>
+  <br>
+  <li> Baby giraffes use their butts as pillows.</li>
+  <br>
+  <li>Heat is the deadliest weather condition.</li>
+  <br>
+  <li> Cows kill more people than sharks.</li>
+</ul>
+
+
+
+</body>
+<br>
+</div>
+</div>
+<br>
+<button onclick="window.location.href='https://www.youtube.com/watch?v=JkaxUblCGz0';" type="button" class="block"><b> View  Nature</b> </button>
+  </div> 
+  
+</body>
+</html>
